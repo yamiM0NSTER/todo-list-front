@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SnackbarProvider } from 'notistack';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SnackbarProvider
+      maxSnack={5}
+      anchorOrigin={{
+        vertical: 'top',
+        horizontal: 'center',
+      }}
+    >
+      <App />
+    </SnackbarProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

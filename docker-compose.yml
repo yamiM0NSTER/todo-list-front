@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    command: npm run start
+    ports:
+      - '3000:3000'
+    environment:
+      REACT_APP_WS_URL: ws://localhost:3333
+      REACT_APP_API_URL: http://localhost:3333

@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.paper {
+  padding: $spacing;
+  text-align: left;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing;
+  }
+}
+
+.paper-root {
+  // background-color: red;
+
+  &-shown {
+    // background-color: rgb(124, 124, 124);
+    // color: rgb(207, 207, 207);
+  }
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

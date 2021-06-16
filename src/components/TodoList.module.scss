@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+.paper {
+  padding: $spacing;
+}
+
+.header {
+  padding: $spacing;
+  line-height: 51px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+
+  .text {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 51px;
+  }
+
+  .add {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    height: 51px;
+    line-height: 51px;
+
+    .button {
+      margin-right: $spacing;
+    }
+  }
+}
